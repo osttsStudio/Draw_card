@@ -2,23 +2,23 @@ import "../css/style.css";
 var $ = require('jquery');
 const six = ['星间','葬葬'];
 
-const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki'];
+const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子'];
 
-const four = ['莽莽', '黑色年代记'];
+const four = ['莽莽', '年代记', 'BJB','psm'];
 
 const three = ['红叶'];
 
-const packageDesc = ['每月寻访礼包 (源石*42, 10连凭证*1)', '新人寻访组合包 (10连凭证*2)', '感谢庆典备战包 (源石*90, 10连凭证*1)', '月卡 (6源石+每天200合成玉)'];
+const packageDesc = ['每月寻访礼包 (坷拉*42, 10连凭证*1)', '新人寻访组合包 (10连凭证*2)', '感谢庆典备战包 (坷拉*90, 10连凭证*1)', '月卡 (6坷拉+每天200合成玉)'];
 
-const sstoneNum = [1, 7, 24, 50, 90, 185]; // 源石礼包中的源石数
+const sstoneNum = [1, 7, 24, 50, 90, 185]; // 坷拉礼包中的坷拉数
 
-const sstoneMoney = [6, 30, 98, 198, 328, 648]; // 源石礼包价格
+const sstoneMoney = [6, 30, 98, 198, 328, 648]; // 坷拉礼包价格
 
-const sstoneFEx = [3, 12, 40, 80, 132, 260]; // 首充源石礼包送的源石
+const sstoneFEx = [3, 12, 40, 80, 132, 260]; // 首充坷拉礼包送的坷拉
 
 const activityNum = 2;
 
-const act0Title = '常驻标准寻访';
+const act0Title = '常驻';
 
 const act1Title = '暂无'; // 活动卡池
 
@@ -216,7 +216,7 @@ class SJManager {
             case 3: return this.isFirstBuySStone3;
             case 4: return this.isFirstBuySStone4;
             case 5: return this.isFirstBuySStone5;
-            default: throw new Error('不存在这样的的源石商品');
+            default: throw new Error('不存在这样的的坷拉商品');
         }
     }
 
@@ -249,10 +249,10 @@ class SJManager {
             case 0:
                 if (this.isFirstBuySStone0) {
                     this.AddStone(sstoneFEx[0]);
-                    this.counter.Spend(`${sstoneFEx[0]} 源石`, sstoneMoney[0]);
+                    this.counter.Spend(`${sstoneFEx[0]} 坷拉`, sstoneMoney[0]);
                 } else {
                     this.AddStone(sstoneNum[0]);
-                    this.counter.Spend(`${sstoneNum[0]} 源石`, sstoneMoney[0]);
+                    this.counter.Spend(`${sstoneNum[0]} 坷拉`, sstoneMoney[0]);
                 }
                 //this.AddMoney(sstoneMoney[0]);
                 this.isFirstBuySStone0 = false;
@@ -260,10 +260,10 @@ class SJManager {
             case 1:
                 if (this.isFirstBuySStone1) {
                     this.AddStone(sstoneFEx[1]);
-                    this.counter.Spend(`${sstoneFEx[1]} 源石`, sstoneMoney[1]);
+                    this.counter.Spend(`${sstoneFEx[1]} 坷拉`, sstoneMoney[1]);
                 } else {
                     this.AddStone(sstoneNum[1]);
-                    this.counter.Spend(`${sstoneNum[1]} 源石`, sstoneMoney[1]);
+                    this.counter.Spend(`${sstoneNum[1]} 坷拉`, sstoneMoney[1]);
                 }
                 //this.AddMoney(sstoneMoney[1]);
                 this.isFirstBuySStone1 = false;
@@ -271,10 +271,10 @@ class SJManager {
             case 2:
                 if (this.isFirstBuySStone2) {
                     this.AddStone(sstoneFEx[2]);
-                    this.counter.Spend(`${sstoneFEx[2]} 源石`, sstoneMoney[2]);
+                    this.counter.Spend(`${sstoneFEx[2]} 坷拉`, sstoneMoney[2]);
                 } else {
                     this.AddStone(sstoneNum[2]);
-                    this.counter.Spend(`${sstoneNum[2]} 源石`, sstoneMoney[2]);
+                    this.counter.Spend(`${sstoneNum[2]} 坷拉`, sstoneMoney[2]);
                 }
                 //this.AddMoney(sstoneMoney[2]); 
                 this.isFirstBuySStone2 = false;
@@ -282,10 +282,10 @@ class SJManager {
             case 3:
                 if (this.isFirstBuySStone3) {
                     this.AddStone(sstoneFEx[3]);
-                    this.counter.Spend(`${sstoneFEx[3]} 源石`, sstoneMoney[3]);
+                    this.counter.Spend(`${sstoneFEx[3]} 坷拉`, sstoneMoney[3]);
                 } else {
                     this.AddStone(sstoneNum[3]);
-                    this.counter.Spend(`${sstoneNum[3]} 源石`, sstoneMoney[3]);
+                    this.counter.Spend(`${sstoneNum[3]} 坷拉`, sstoneMoney[3]);
                 }
                 //this.AddMoney(sstoneMoney[3]); 
                 this.isFirstBuySStone3 = false;
@@ -293,10 +293,10 @@ class SJManager {
             case 4:
                 if (this.isFirstBuySStone4) {
                     this.AddStone(sstoneFEx[4]);
-                    this.counter.Spend(`${sstoneFEx[4]} 源石`, sstoneMoney[4]);
+                    this.counter.Spend(`${sstoneFEx[4]} 坷拉`, sstoneMoney[4]);
                 } else {
                     this.AddStone(sstoneNum[4]);
-                    this.counter.Spend(`${sstoneNum[4]} 源石`, sstoneMoney[4]);
+                    this.counter.Spend(`${sstoneNum[4]} 坷拉`, sstoneMoney[4]);
                 }
                 //this.AddMoney(sstoneMoney[4]); 
                 this.isFirstBuySStone4 = false;
@@ -304,21 +304,21 @@ class SJManager {
             case 5:
                 if (this.isFirstBuySStone5) {
                     this.AddStone(sstoneFEx[5]);
-                    this.counter.Spend(`${sstoneFEx[5]} 源石`, sstoneMoney[5]);
+                    this.counter.Spend(`${sstoneFEx[5]} 坷拉`, sstoneMoney[5]);
                 } else {
                     this.AddStone(sstoneNum[5]);
-                    this.counter.Spend(`${sstoneNum[5]} 源石`, sstoneMoney[5]);
+                    this.counter.Spend(`${sstoneNum[5]} 坷拉`, sstoneMoney[5]);
                 }
                 //this.AddMoney(sstoneMoney[5]); 
                 this.isFirstBuySStone5 = false;
                 break;
-            default: throw new Error('不存在价格为 ' + sstoneMoney[type].toString() + ' 的源石商品');
+            default: throw new Error('不存在价格为 ' + sstoneMoney[type].toString() + ' 的坷拉商品');
         }
 
     }
 
     public SStoneToJade = (stonenum: number = 0): void => {
-        if (stonenum > SJManager.sStone) throw new Error('兑换失败：源石不足');
+        if (stonenum > SJManager.sStone) throw new Error('兑换失败：坷拉不足');
         SJManager.sStone -= stonenum;
         SJManager.compoundJade += stonenum * 180;
 
@@ -429,7 +429,7 @@ class HeadHunter {
                 case 5: num = this.activityAgents.five.length; prob = this.rand.Next(0, num - 1); res = this.activityAgents.five[prob]; break;
                 case 4: num = this.activityAgents.four.length; prob = this.rand.Next(0, num - 1); res = this.activityAgents.four[prob]; break;
                 case 3: num = this.activityAgents.three.length; prob = this.rand.Next(0, num - 1); res = this.activityAgents.three[prob]; break;
-                default: throw new Error('错误，不存在低于3星的或高于6星的寻访干员');
+                default: throw new Error('错误，不存在低于3星的或高于6星的寻访组长');
             }
         }
         else {
@@ -438,7 +438,7 @@ class HeadHunter {
                 case 5: num = this.normalAgents.five.length; prob = this.rand.Next(0, num - 1); res = this.normalAgents.five[prob]; break;
                 case 4: num = this.normalAgents.four.length; prob = this.rand.Next(0, num - 1); res = this.normalAgents.four[prob]; break;
                 case 3: num = this.normalAgents.three.length; prob = this.rand.Next(0, num - 1); res = this.normalAgents.three[prob]; break;
-                default: throw new Error('错误，不存在低于3星的或高于6星的寻访干员');
+                default: throw new Error('错误，不存在低于3星的或高于6星的寻访组长');
             }
         }
         return res;
@@ -552,7 +552,7 @@ class ViewControl {
             $('#tips').text('保底已出');
         }
         else {
-            $('#tips').text(`${minFloor}次内必定获得5星及以上干员`);
+            $('#tips').text(`${minFloor}次内必定获得5星及以上组长`);
         }
     }
 
@@ -582,7 +582,7 @@ class ViewControl {
 
 
     public static CloseFirstEx = (type: number): void => {
-        $('#buy-sstone' + type.toString()).text('氪金' + sstoneMoney[type].toString() + '元买' + sstoneNum[type] + '源石');
+        $('#buy-sstone' + type.toString()).text('氪金' + sstoneMoney[type].toString() + '元买' + sstoneNum[type] + '坷拉');
     }
 
     public static ClosePackage = (type: number): void => {
@@ -614,8 +614,8 @@ function DrawOnce() {
         ViewControl.HideRadio();
         if (SJManager.compoundJade - 600 < 0) {
             let needSStone = SJManager.CanCalsStoneJade(true);
-            if (needSStone == -1) throw new Error('合成玉/源石不足');
-            let result = confirm('是否要花费 ' + needSStone.toString() + ' 源石来兑换 ' + (needSStone * 180).toString() + ' 合成玉用来寻访？');
+            if (needSStone == -1) throw new Error('合成玉/坷拉不足');
+            let result = confirm('是否要花费 ' + needSStone.toString() + ' 坷拉来兑换 ' + (needSStone * 180).toString() + ' 合成玉用来寻访？');
             if (result) {
                 sjManager.SStoneToJade(needSStone);
                 ViewControl.ViewSync(headHunter.GetMinFloor());
@@ -647,8 +647,8 @@ function DrawTenth() {
         ViewControl.HideRadio();
         if (SJManager.compoundJade - 6000 < 0) {
             let needSStone = SJManager.CanCalsStoneJade(false);
-            if (needSStone == -1) throw new Error('合成玉/源石不足');
-            let result = confirm('是否要花费 ' + needSStone.toString() + ' 源石来兑换 ' + (needSStone * 180).toString() + ' 合成玉用来寻访？');
+            if (needSStone == -1) throw new Error('合成玉/坷拉不足');
+            let result = confirm('是否要花费 ' + needSStone.toString() + ' 坷拉来兑换 ' + (needSStone * 180).toString() + ' 合成玉用来寻访？');
             if (result) {
                 sjManager.SStoneToJade(needSStone);
                 ViewControl.ViewSync(headHunter.GetMinFloor());
@@ -681,7 +681,7 @@ function BuySStone(type: number) {
         let num;
         if (sjManager.IsFirstBuy(type)) num = sstoneFEx[type];
         else num = sstoneNum[type];
-        let result = confirm('是否要花费 ' + sstoneMoney[type].toString() + ' 元来购买' + num.toString() + ' 源石？');
+        let result = confirm('是否要花费 ' + sstoneMoney[type].toString() + ' 元来购买' + num.toString() + ' 坷拉？');
         if (!result) return;
         if (sjManager.IsFirstBuy(type)) ViewControl.CloseFirstEx(type);
         sjManager.BuySStone(type);
@@ -713,9 +713,9 @@ function ConvertStoneToJade() {
     //     player[0].play();
     // }
     try {
-        let num = parseInt(prompt("请输入您想要兑换的源石数量：", "1"));
+        let num = parseInt(prompt("请输入您想要兑换的坷拉数量：", "1"));
         if (isNaN(num)) num = 1;
-        let result = confirm('是否要花费 ' + num.toString() + ' 源石来兑换' + (num * 180).toString() + ' 合成玉？');
+        let result = confirm('是否要花费 ' + num.toString() + ' 坷拉来兑换' + (num * 180).toString() + ' 合成玉？');
         if (!result) return;
         sjManager.SStoneToJade(num);
         ViewControl.ViewSync(headHunter.GetMinFloor());
@@ -765,10 +765,10 @@ function ShowHis(type: MyEvent) {
         case 5: agent_array = counter.GetFive(); break;
         case 4: agent_array = counter.GetFour(); break;
         case 3: agent_array = counter.GetThree(); break;
-        default: alert('寻访不存在此种干员'); return;
+        default: alert('寻访不存在此种组长'); return;
     }
     if (agent_array.length == 0) {
-        alert(`没有抽到${type.data.type}星干员`);
+        alert(`没有抽到${type.data.type}星组长`);
         return;
     }
 
