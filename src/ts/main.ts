@@ -1,10 +1,10 @@
 import "../css/style.css";
 var $ = require('jquery');
-const six = [ '雾羽'];
+const six = ['星间','葬葬'];
 
-const five = ['琉音', 'Yasukii'];
+const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki'];
 
-const four = ['莽莽','黑色年代记'];
+const four = ['莽莽', '黑色年代记'];
 
 const three = ['红叶'];
 
@@ -20,31 +20,31 @@ const activityNum = 2;
 
 const act0Title = '常驻标准寻访';
 
-const act1Title = '月隐晦明'; // 活动卡池
+const act1Title = '暂无'; // 活动卡池
 
-const act2Title = '锁与匙的守卫者';
+const act2Title = '急需美工';
 
-const sixActivity0: string[] = ['伊芙利特', '森蚺'];
+const sixActivity0: string[] = ['雾羽', '丫丫', '高桥'];
 
-const fiveActivity0: string[] = ['幽灵鲨', '惊蛰', '食铁兽'];
+const fiveActivity0: string[] = [];
 
 const fourActivity0: string[] = [];
 
 const threeActivity0: string[] = [];
 
-const sixActivity1: string[] = ['夕', '嵯峨', '年'];
+const sixActivity1: string[] = [];
 
-const fiveActivity1: string[] = ['乌有'];
+const fiveActivity1: string[] = [];
 
 const fourActivity1: string[] = [];
 
 const threeActivity1: string[] = [];
 
-const sixActivity2: string[] = ['莫斯提马'];
+const sixActivity2: string[] = [];
 
-const fiveActivity2: string[] = ['槐琥', '守林人'];
+const fiveActivity2: string[] = [];
 
-const fourActivity2: string[] = ['梅'];
+const fourActivity2: string[] = [];
 
 const threeActivity2: string[] = [];
 

@@ -10,6 +10,13 @@
 
 [Vercel](https://draw-card.vercel.app/)<br>
 
+### 目前卡池
+
+6星：雾羽，丫丫，高桥，星间，葬葬
+5星：琉音，Yasukii，BCC，亿万Hideki
+4星：莽莽，黑色年代记
+3星：红叶
+
 ### 如果对此项目本身感兴趣
 
 <s>此项目是采用 `typescript` + `less` + `html` 进行前端开发的小型静态页面，使用 `webpack` 构建打包
