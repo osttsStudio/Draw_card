@@ -11,7 +11,7 @@
 ### 如果要体验模拟抽卡，请访问托管页面：<br>
 
 [Vercel](https://draw-card.vercel.app/)<br>
-【腾讯云（大概】【国内节点】暂无 后续请关注GitHub<br>
+[腾讯云（大概)]暂无<br>
 
 ### 目前卡池
 
