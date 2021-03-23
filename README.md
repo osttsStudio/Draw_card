@@ -1,6 +1,6 @@
 # 哔哩哔哩虚拟区字幕组组长抽卡模拟器
 
-[原项目：arknights]（https://github.com/lollipopnougat/arknights）<br>
+[原项目：arknights](https://github.com/lollipopnougat/arknights)<br>
 
 该项目目前为0.1测试版 仅仅是能跑 还需要大量的文本改动和美工 这不来个组长干活？
 
