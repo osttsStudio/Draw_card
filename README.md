@@ -49,4 +49,4 @@ npm run build
 
 ## 写在最后
 
-感谢arknights大佬的源码 感谢红镜佬的0.1版美工
+感谢arknights大佬的源码
