@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
   /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
   /* 让背景图基于容器大小伸缩 */
-  background-size: auto;
+  background-size: length 1920 1080;
   margin: 0;
   padding: 0;
 }
