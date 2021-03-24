@@ -4,7 +4,7 @@ const six = ['星间','葬葬'];
 
 const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子'];
 
-const four = ['莽莽', '年代记', 'BJB','psm'];
+const four = ['莽莽', '年代记', 'BJB','蓝蓝'];
 
 const three = ['红叶'];
 
