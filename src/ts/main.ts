@@ -1,6 +1,6 @@
 import "../css/style.css";
 var $ = require('jquery');
-const six = ['星间','葬葬'];
+const six = ['葬葬'];
 
 const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子'];
 
@@ -24,7 +24,7 @@ const act1Title = '暂无'; // 活动卡池
 
 const act2Title = '急需美工';
 
-const sixActivity0: string[] = ['雾羽', '丫丫', '高桥'];
+const sixActivity0: string[] = ['雾羽', '丫丫', '高桥','星间'];
 
 const fiveActivity0: string[] = [];
 
