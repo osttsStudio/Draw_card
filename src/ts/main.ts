@@ -6,7 +6,7 @@ const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子', 'Jerry', '�
 
 const four = ['莽莽', '年代记', 'BJB','蓝蓝','影妹','可爱','喵帕斯','天元'];
 
-const three = ['红叶','小乙'];
+const three = ['小乙'];
 
 const packageDesc = ['每月寻访礼包 (坷拉*42, 10连凭证*1)', '新人寻访组合包 (10连凭证*2)', '感谢庆典备战包 (坷拉*90, 10连凭证*1)', '月卡 (6坷拉+每天200合成玉)'];
 
@@ -30,7 +30,7 @@ const fiveActivity0: string[] = [];
 
 const fourActivity0: string[] = [];
 
-const threeActivity0: string[] = [];
+const threeActivity0: string[] = ['红叶'];
 
 const sixActivity1: string[] = [];
 
