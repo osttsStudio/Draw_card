@@ -1,6 +1,6 @@
 import "../css/style.css";
 var $ = require('jquery');
-const six = ['葬葬','K宝'];
+const six = ['葬葬','K宝','赫赫'];
 
 const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子', 'Jerry', '大桂鱼', '冷场王','虚无','丸子雏'];
 
