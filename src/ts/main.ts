@@ -2,7 +2,7 @@ import "../css/style.css";
 var $ = require('jquery');
 const six = ['葬葬','K宝','赫赫','上弦月'];
 
-const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子', 'Jerry', '大桂鱼', '冷场王','虚无','丸子雏'];
+const five = ['琉音', 'Yasukii', 'BCC', '亿万Hideki', '王子', 'Jerry', '大桂鱼', '冷场王','虚无','丸子雏','角刀'];
 
 const four = ['莽莽', '年代记', 'BJB','蓝蓝','影妹','可爱','喵帕斯','天元'];
 
